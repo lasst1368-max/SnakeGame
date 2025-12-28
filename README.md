@@ -4,7 +4,7 @@
 
 ## Snake Game; Simple
 
-This is a simple Snake game I put together in a short period of time.
+This is a simple Snake game I put together in a short period of time, as an educational piece for C++.
 It’s lightweight enough to run on any graphical Linux environment, works fully offline, and keeps things intentionally minimal.
 
 ---
