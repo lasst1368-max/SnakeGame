@@ -4,8 +4,8 @@
 #include <SFML/Audio.hpp>
 
 const int CELL_SIZE = 20;
-const int WIDTH = 800;
-const int HEIGHT = 600;
+sf::View view(sf::FloatRect(0, 0, WIDTH, HEIGHT));
+window.setView(view);
 
 int grow = 0;
 
@@ -19,8 +19,12 @@ sf::VertexArray grid(sf::Lines);
 
 int main() {
     bool gameOver = false;
-        sf::RenderWindow window(sf::VideoMode(WIDTH, HEIGHT), "Snake Game");
-
+        sf::RenderWindow window(
+    sf::RenderWindow window(
+    sf::VideoMode::getDesktopMode(),
+    "Snake Game",
+    sf::Style::Titlebar | sf::Style::Close
+);
         sf::SoundBuffer eatBuffer;
         if (!eatBuffer.loadFromFile("eat-323883.ogg")) {std::cerr << "Failed to load Snake Eat!" << std::endl;
                         return -1;}
