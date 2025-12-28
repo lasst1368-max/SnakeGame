@@ -21,6 +21,20 @@ Current Features
 
 ---
 
+Installation:
+
+First download the latest release, wait for that to finish.
+
+Navigate to where it was Downloaded, Then enter the following:
+
+```bash
+tar -xJvf SnakeGame-linux.tar.xz
+cd Build
+./SnakeGame
+```
+
+---
+
 Feel free to:
 
 **Use this project anywhere**
