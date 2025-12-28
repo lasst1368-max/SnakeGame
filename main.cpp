@@ -49,7 +49,7 @@ int main() {
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up) && dir != DOWN ) dir = UP;
             else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down) && dir != UP ) dir = DOWN;
             else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left) && dir != RIGHT ) dir = LEFT;
-            else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right) && dir != RIGHT ) dir = RIGHT;
+            else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right) && dir != LEFT ) dir = RIGHT;
             if (clock.getElapsedTime().asSeconds() >= moveDelay) {
                 clock.restart();
 
