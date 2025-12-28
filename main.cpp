@@ -22,13 +22,15 @@ int main() {
         sf::RenderWindow window(sf::VideoMode(WIDTH, HEIGHT), "Snake Game");
 
         sf::SoundBuffer eatBuffer;
-        if (!eatBuffer.loadFromFile("eat-323883.ogg")) { /* handle error */ }
+        if (!eatBuffer.loadFromFile("eat-323883.ogg")) {std::cerr << "Failed to load Snake Eat!" << std::endl;
+                        return -1;}
 
         sf::Sound eatSound;
         eatSound.setBuffer(eatBuffer);
 
         sf::Music bgm;
-        if (!bgm.openFromFile("gaming-game-minecraft-background-music-372242.ogg")) { /* handle error */ }
+        if (!bgm.openFromFile("gaming-game-minecraft-background-music-372242.ogg")) { std::cerr << "Failed to load BGM!" << std::endl;
+                        return -1; }
         bgm.setLoop(true);
         bgm.play();
 
