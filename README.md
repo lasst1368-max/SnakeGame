@@ -9,7 +9,7 @@ It’s lightweight enough to run on any graphical Linux environment, works fully
 
 ---
 
-Current Features
+## Current Features
 
 **Basic audio (sound effects + music)**
 
@@ -21,7 +21,7 @@ Current Features
 
 ---
 
-Installation:
+## Installation:
 
 First download the latest release, wait for that to finish.
 
@@ -35,7 +35,7 @@ cd Build
 
 ---
 
-Feel free to:
+## Feel free to:
 
 **Use this project anywhere**
 
